@@ -1,0 +1,231 @@
+:root {
+    --primary: #048C7F;
+    --attention: #F22613;
+    --background: #F2F2F2;
+    --secondary: #0C1A26;
+    --attention-second: #f2694b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--background);
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    border-radius: 20px;
+    background-color: var(--attention-second);
+    color: var(--background);
+    padding: 5px 0;
+    box-shadow: none;
+}
+
+.btn:hover{
+    background-color: var(--attention);
+    transition: background-color 0.5s;
+}
+
+@media (min-width: 1280px) {
+    
+    .header .logo{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .header{
+        width: 100%;
+        background-color: var(--primary);
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    .header-container{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-navigation{
+        width: 450px;
+        display: flex;
+        justify-content: space-around;
+        
+        
+    }
+    
+    .header-navigation li a{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--background);
+        text-transform: uppercase;
+        transition: color 0.35s, text-decoration 0.9s;
+    }
+    
+    .header-navigation li a:hover{
+        color: var(--secondary);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.2em;
+        transition: color 0.35s, text-decoration 0.35s 0.1s;
+    }
+
+    /* Hero */
+    .hero{
+        width: 100%;
+        height: 900px;
+    }
+    .hero-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .hero-left-container{
+        background-color: var(--secondary);
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-right-container{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-greeting{
+        font-size: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-image{
+        border-radius: 40px;
+        border: 2px solid var(--background);
+    }
+
+    /* Projects */
+    .projects{
+        width: 100%;
+        height: 800px; /* this will change to auto when filled */
+        background-color: var(--background);
+        padding: 100px;
+        background-color: var(--secondary);
+    }
+
+    .projects-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    /* About */
+
+
+    /* Contact */
+    .contact{
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+        background-color: var(--attention-second);
+    }
+    
+    .contact-form-container{
+        width: 100%;
+        background: var(--background);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-top: auto;
+        border-radius: 40px;
+    }
+
+    .contact-heading{
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 20px;
+    }
+
+    .contact-form{
+        height: 100%;
+        width: auto;
+        padding: 5px 550px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .contact-form input{
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .contact-form >*{
+        margin-bottom: 10px;
+    }
+    .contact-form > *:nth-child(2n) {
+        margin-bottom: 15px;
+    }
+    
+    .contact-form div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-textarea-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form textarea{
+        resize: none;
+        padding: 5px;
+    }
+
+
+
+
+
+    /* Footer */
+    .footer{
+        width: 100%;
+        height: 200px;
+        background-color: var(--primary);
+        color: var(--background);
+        padding: 20px 0;
+    }
+    
+}

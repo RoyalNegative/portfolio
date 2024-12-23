@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+
+    <title>Kaan Erenmemisoglu</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Header -->
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">
+            <a href="index.html">KAAN</a>
+          </div>
+          <div class="menu-icon-container">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="#menu-icon"></use>
+            </svg>
+          </div>
+          <nav>
+            <ul class="header-navigation">
+              <li><a href="#Hero">Home</a></li>
+              <li><a href="#Projects">Projects</a></li>
+              <li><a href="#About">About Me</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="Hero" class="hero">
+        <!-- Hero -->
+        <div class="hero-container">
+          <div class="hero-left-container">
+            <img
+              src="./images/hero-profile.jpg"
+              alt="Kaan Erenmemisoglu"
+              class="hero-image"
+              width="512"
+              height="683"
+            />
+          </div>
+          <div class="hero-right-container">
+            <h1 class="hero-greeting">
+              Hi, I am <br /><span class="hero-name">Kaan Erenmemisoglu</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section id="Projects" class="projects">
+        <!-- Projects -->
+        <div class="project-container"></div>
+      </section>
+      <section id="About Me" class="about-me"><!-- About --></section>
+
+      <section id="Contact" class="contact">
+        <!-- Contact -->
+        <div class="contact-form-container">
+          <h2 class="contact-heading">Contact Me</h2>
+          <form action="" class="contact-form">
+            <div>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <div>
+              <label for="topic">Topic:</label>
+              <input
+                type="text"
+                id="topic"
+                name="topic"
+                placeholder="Topic"
+                required
+              />
+            </div>
+            <div class="form-textarea-container">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Footer -->
+      <div class="footer-container">
+        
+      </div>
+    </footer>
+  </body>
+</html>
