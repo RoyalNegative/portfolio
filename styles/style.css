@@ -167,7 +167,6 @@ li{
         height: 100%;
         padding: 100px;
         background: linear-gradient(to bottom, #0C1A26, #f2694b); /* Yukarıdan aşağıya gradient */
-
         background-color: var(--attention-second);
     }
 
@@ -175,6 +174,14 @@ li{
         margin: 0;
         padding: 0;
         border-radius: 40px;
+    }
+
+    .about-container{
+        display: flex;
+    }
+
+    .about-left-container{
+        color: var(--background);
     }
 
     /* Contact */
