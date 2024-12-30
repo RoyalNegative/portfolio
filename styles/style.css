@@ -247,8 +247,11 @@ li{
     .contact-form input{
         border: none;
         border-radius: 5px;
-        padding: 5px;
+        padding: 10px;
+        
     }
+
+   
 
     .contact-form input:focus,
     .contact-form textarea:focus{
@@ -274,7 +277,7 @@ li{
     }
     .contact-form textarea{
         resize: none;
-        padding: 5px;
+        padding: 10px;
         border: none;
     }
 
