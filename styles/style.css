@@ -19,7 +19,6 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     width: 100%;
     height: auto;
@@ -162,25 +161,48 @@ li{
 
     .projects-container{
         width: 100%;
+        padding: 15px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
     }
     .projects-list-container{
-
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .project-item{
         border: 2px solid white;
         display: flex;
-        gap: 100px;
+        align-items: center;
+        gap: 50px;
+        border-radius: 24px;
+        padding: 20px;
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    .project-item img{
+        border-radius: 24px;
+        object-fit: fill;
+        width: 400px;
+        height: 100%;
     }
 
     .project-item-right-container{
         color: white;
         text-align: left;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 
+    .project-title{
+        font-size: 26px;
+    }
+
+    .project-description{
+        line-height: 1.5em;
+    }
     .used-skills-conatiner{
         display: flex;
         gap: 40px;
@@ -188,34 +210,40 @@ li{
 
     .used-skills-list{
         display: flex;
-        gap: 20px;
+        gap: 30px;
     }
 
-    .used-skills-list li {
-        list-style: disc; /* Ensures dots appear */
+    .html-icon{
+        fill: #E44D26;    
     }
 
-    .used-skills-list li::marker{
+    .css-icon{
+        fill: #1572B6;
+    }
+
+    .js-icon{
+        fill: #F7DF1E;
+    }
+
+    .reactjs-icon{
+        fill: #61DAFB;
+    }
+
+    .nodejs-icon{
+        fill: #339933;
+    }
+
+    .figma-icon{
+        fill: #A259FF;
+    }
+
+    .used-skills-list .list-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
         font-size: 20px;
     }
-    
-    /* Specific colors for each bullet */
-    .used-skills-list li.html::marker {
-        color: red; /* HTML bullet color */
-        
-    }
-    
-    .used-skills-list li.css::marker {
-        color: blue; /* CSS bullet color */
-     
-    }
-    
-    .used-skills-list li.js::marker {
-        color: green; /* JavaScript bullet color */
-    
-
-    }
-
 
 
     /* About */
