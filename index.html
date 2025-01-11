@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Kaan Erenmemisoglu - Software Engineer with a strong background in programming and innovative solutions."
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -63,30 +67,73 @@
         <!-- Projects -->
         <h2 class="projects-heading">Projects</h2>
         <div class="projects-container">
-          <div class="projects-left-container"></div>
-          <div class="projects-right-container"></div>
+          <ul class="projects-list-container">
+            <li class="project-item">
+              <img src="./images/aboutme.png" alt="project 1" width="200px" height="100%"/>
+              <div class="project-item-right-container">
+                <a href="#"><h3 class="project-title">Project 1</h3> </a>
+                <p class="project-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam eget felis nec libero ultricies ultricies. Nullam eget
+                  felis nec libero ultricies ultricies.
+                </p>
+                <div class="used-skills-conatiner">
+                  <h4>Used:</h4>
+                  <ul class="used-skills-list">
+                    <li class="html">HTML</li>
+                    <li class="css">CSS</li>
+                    <li class="js">JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="project-item">Project 2</li>
+          </ul>
         </div>
       </section>
       <section id="About" class="about-me">
         <!-- About -->
-         <div class="about-container">
+        <div class="about-container">
           <div class="about-left-container">
             <h2 class="about-heading">About Me</h2>
             <p class="about-text">
-                I am a driven individual with a strong background in software engineering, having spent five years studying and honing my skills in the Netherlands. During this time, I gained valuable knowledge and practical experience in programming, software development methodologies, and collaborative problem-solving. My time abroad not only enriched my technical expertise but also broadened my perspective and adaptability in diverse environments.
-
-                Throughout my academic journey, I developed a passion for creating innovative solutions to complex challenges. <br> I am skilled in various programming languages and tools, and I thrive in dynamic, fast-paced settings where creativity and efficiency come together to achieve impactful results.
-                
-                In addition to my technical abilities, I am deeply interested in entrepreneurship and aspire to build my own tech company in the future. This ambition motivates me to continuously learn and grow, both personally and professionally. I am committed to leveraging my knowledge and experiences to contribute meaningfully to the technology landscape.
-                
-                While my path has included unique challenges, I see every experience as an opportunity for growth. My time in the Netherlands shaped me into a resourceful, resilient, and forward-thinking individual who is ready to take on new opportunities and make a difference in the world of technology.
-                
-                If you're looking for someone with a proactive mindset, strong technical skills, and a clear vision for the future, I would be excited to connect and collaborate.            </p>
+              I am a driven individual with a strong background in software
+              engineering, having spent five years studying and honing my skills
+              in the Netherlands. During this time, I gained valuable knowledge
+              and practical experience in programming, software development
+              methodologies, and collaborative problem-solving. My time abroad
+              not only enriched my technical expertise but also broadened my
+              perspective and adaptability in diverse environments. Throughout
+              my academic journey, I developed a passion for creating innovative
+              solutions to complex challenges. <br />
+              I am skilled in various programming languages and tools, and I
+              thrive in dynamic, fast-paced settings where creativity and
+              efficiency come together to achieve impactful results. In addition
+              to my technical abilities, I am deeply interested in
+              entrepreneurship and aspire to build my own tech company in the
+              future. This ambition motivates me to continuously learn and grow,
+              both personally and professionally. I am committed to leveraging
+              my knowledge and experiences to contribute meaningfully to the
+              technology landscape. While my path has included unique
+              challenges, I see every experience as an opportunity for growth.
+              My time in the Netherlands shaped me into a resourceful,
+              resilient, and forward-thinking individual who is ready to take on
+              new opportunities and make a difference in the world of
+              technology. If you're looking for someone with a proactive
+              mindset, strong technical skills, and a clear vision for the
+              future, I would be excited to connect and collaborate.
+            </p>
           </div>
           <div class="about-right-container">
-            <img src="./images/aboutme.png" alt="about me image" class="aboutmeimg" width="640px" height="800px">
+            <img
+              src="./images/aboutme.png"
+              alt="about me image"
+              class="aboutmeimg"
+              width="640px"
+              height="800px"
+            />
           </div>
-         </div>
+        </div>
       </section>
 
       <section id="Contact" class="contact">
@@ -156,5 +203,8 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

@@ -6,11 +6,16 @@
     --attention-second: #f2694b;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    border: none;
 }
 
 body{
@@ -35,12 +40,16 @@ li{
     color: var(--background);
     padding: 5px 0;
     box-shadow: none;
+    transition: transform 0.2s;
 }
 
 .btn:hover{
     background-color: var(--attention);
     transition: background-color 0.5s;
+    transform: scale(1.05);
 }
+
+
 
 @media (min-width: 1280px) {
     
@@ -155,12 +164,58 @@ li{
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
+    }
+    .projects-list-container{
+
     }
 
-    .projects-left-container{
-        width: 50%;
-        height: 700px;
+    .project-item{
+        border: 2px solid white;
+        display: flex;
+        gap: 100px;
     }
+
+    .project-item-right-container{
+        color: white;
+        text-align: left;
+    }
+
+    .used-skills-conatiner{
+        display: flex;
+        gap: 40px;
+    }
+
+    .used-skills-list{
+        display: flex;
+        gap: 20px;
+    }
+
+    .used-skills-list li {
+        list-style: disc; /* Ensures dots appear */
+    }
+
+    .used-skills-list li::marker{
+        font-size: 20px;
+    }
+    
+    /* Specific colors for each bullet */
+    .used-skills-list li.html::marker {
+        color: red; /* HTML bullet color */
+        
+    }
+    
+    .used-skills-list li.css::marker {
+        color: blue; /* CSS bullet color */
+     
+    }
+    
+    .used-skills-list li.js::marker {
+        color: green; /* JavaScript bullet color */
+    
+
+    }
+
 
 
     /* About */
@@ -185,8 +240,12 @@ li{
     .about-left-container{
         color: var(--background);
         height: 100%;
-        width: 50%;
-        padding: 0 150px;
+        width: 100%;
+        padding: 0 20px;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .about-heading{
@@ -196,12 +255,20 @@ li{
     }
 
     .about-text{
-        line-height: 1.5;
+        line-height: 2;
     }
 
     .about-right-container{
         width: 50%;
         height: 100%;
+    }
+
+    .about-text{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        padding: 0;
+        margin: 0;
     }
 
     /* Contact */
