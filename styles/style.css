@@ -478,15 +478,16 @@ body {
   }
 
   .projects-container {
-    width: 100%;
+    width: auto;
     padding: 15px;
-    height: 100%;
+    height: auto;
+    overflow: visible;
   }
   .projects-list-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    overflow: hidden;
+    gap: 60px;
+    overflow: visible;
   }
 
   .project-item {
