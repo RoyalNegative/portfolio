@@ -1,4 +1,3 @@
-
 gsap.registerPlugin(ScrollTrigger);
 gsap.from(".hero-greeting", { y: 200, opacity: 0, duration: 1.5 });
 // gsap.to(".about-text", {
@@ -11,6 +10,19 @@ gsap.from(".hero-greeting", { y: 200, opacity: 0, duration: 1.5 });
 //         scrub: true, // Smoothly scrubs the animation as you scroll
 //     },
 // })
+
+// Form submission handling
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    
+    if (status === 'success') {
+        alert('Mesajınız başarıyla gönderildi!');
+        window.location.href = 'index.html';
+    } else if (status === 'error') {
+        alert('Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
+    }
+});
 
 
 
